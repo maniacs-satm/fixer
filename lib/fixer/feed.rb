@@ -16,7 +16,7 @@ module Fixer
     end
 
     def each
-      REXML::XPath.each(document, '//Cube/Cube[@time]') do |day|
+      REXML::XPath.each(document, '/gesmes:Envelope/Cube/Cube[@time]') do |day|
         date = Date.parse(day.attribute('time').value)
         REXML::XPath.each(day, './Cube') do |currency|
           yield(
