@@ -1,13 +1,9 @@
-before_install:
-  - gem install bundler
 rvm:
-  - 2.0.0
   - 2.1
   - 2.2
-  - 2.3.0
+  - 2.3.1
+  - jruby-9000
   - ruby-head
-  - jruby-19mode
-  - rbx-2
 matrix:
   allow_failures:
     - rvm: ruby-head

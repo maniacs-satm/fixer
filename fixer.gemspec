@@ -8,7 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Fixer::VERSION
   spec.author        = ['Hakan Ensari']
   spec.email         = ['hakanensari@gmail.com']
-  spec.summary       = 'A wrapper to the exchange rate feeds of the European Central Bank'
+  spec.summary       = <<-EOF
+    A wrapper to the exchange rate feeds of the European Central Bank
+  EOF
   spec.homepage      = 'https://github.com/hakanensari/fixer'
   spec.license       = 'MIT'
   spec.files         = Dir.glob('lib/**/*') + %w(LICENSE README.md)
